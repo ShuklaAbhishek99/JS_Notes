@@ -1,5 +1,9 @@
 let num = [1, 23, 53, 5, 21, 3, 2]
 
+// arr.forEach((value, index, array)=>{
+//     //code
+// })
+
 //for each loop for array
 num.forEach((element) => {
     console.log(element*element);
@@ -22,12 +26,3 @@ for(let i in num){
     console.log(i)
     console.log(num[i])
 }
-
-
-// num.forEach((value, index, array)=>{
-//     //code
-// })
-
-
-//map creates a new array by performing same operations on each array
-
