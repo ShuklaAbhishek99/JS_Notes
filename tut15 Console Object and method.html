@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Method</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            a:1,
+            b:2,
+            c:3
+        }
+
+        // console.log(console)
+        console.error("Hey this is an error") //this is prints any error if you want to print it
+        console.assert(60>0) //used to assert a condition, if true no problem, else error
+        console.assert(60<0)
+        console.assert("err" != false)
+        console.assert("err" == false)
+        console.log("This outputs a message")
+        // console.clear() //clear the console window
+        console.warn("System failure") //used for warnings
+        console.info("This is to inform you") //used for special information (i button)
+        console.table(obj) //shows data in tabular form
+
+        console.time("p1")//start of process
+        for(let i = 0; i<5; i++){
+            console.log(i)
+        }
+        console.timeEnd("p1") //End of process
+    </script>
+</body>
+</html>
