@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Methods in html</title>
+</head>
+<body>
+    <div class="container">
+        I am start of this container
+        <div id="first">
+            I am the first element
+        </div>
+        I am end of this container
+    </div>
+
+    <script>
+        let a = document.getElementsByTagName('div')[0]
+        // a.innerHTML = a.innerHTML + '<div>Hello World</div>'
+        console.log(a)
+        
+
+        let div = document.createElement('div') //create element
+        div.innerHTML = '<h1>Hello World!</h1>' //inserting html
+        // a.appendChild(div) //appending inside the existing div it to "a"
+        // console.log(a)
+
+        a.append(div) //appending it to "a"
+
+        a.prepend(div) //prepending it to "a", inserted inside a but at first line
+
+        a.before(div) //inserted before the "a"
+
+        a.after(div) //inserted after the "a"
+
+        a.replaceWith(div) //replace "a" with given element
+        console.log(a)
+
+    </script>
+
+</body>
+</html>

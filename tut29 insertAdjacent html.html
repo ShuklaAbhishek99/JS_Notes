@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Adjacent html</title>
+</head>
+<body>
+    <div id="first">
+        I am div
+    </div>
+
+    <script>
+        //similar methods can be used with text/Element
+
+        // document.getElementById("first").insertAdjacentHTML("beforeend", '<div>I am second</div>')
+        // document.getElementById("first").insertAdjacentHTML("afterend", '<div>I am third</div>')
+        // document.getElementById("first").insertAdjacentHTML("beforebegin", '<div>I am fourth</div>')
+        document.getElementById("first").insertAdjacentHTML("afterbegin", '<div>I am fifth</div>')
+
+
+        // how to remove a node use node.remove()
+        let a = document.getElementById("first")
+        first.remove()
+    </script>
+</body>
+</html>
