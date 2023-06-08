@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML</title>
+</head>
+<body>
+    hello world
+    <!-- <span id="first" hidden>Hey I am span</span> -->
+    <span id="first">Hey I am span</span>
+
+    <script>
+        //.log shows dom tree, while .dir shows element as an object with its properties
+        console.log(document.getElementsByTagName("span")[0])
+        console.dir(document.getElementsByTagName('span')[0])
+
+        // nodename can be anythings like element, comment, text, etc but tagname can be only html element
+        console.log(document.body.firstChild.nodeName)
+        console.log(document.body.firstElementChild.nodeName)
+
+        
+        console.log(first.innerHTML) //both linesa are valid
+        console.log(document.getElementById("first").innerHTML)
+
+        // inner as well as outer html
+        // console.log(first.outerHTML)
+        // first.outerHTML = "<div>hey, are you there</div>"
+
+        // valid for non-element, element uses innerHTML
+        console.log(document.body.firstChild.data)
+        console.log(document.body.firstChild.nodeValue)
+
+        // output each and every content inside body, even script content too, but if we move JS content to separate file, then only body content will be there
+        console.log(document.body.textContent)
+
+        // this helps in hiding the element
+        document.body.firstElementChild.hidden = true //this hides the element
+        document.body.firstElementChild.hidden = false // this shows the element
+        
+        //can also be done like this
+        first.hidden = true
+        first.hidden = false
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+</head>
+<body>
+    hello
+
+    <div id="first" class="hey" data-game ="contra" data-name="shukla">
+        hey i am div
+    </div>
+
+    <script>
+        // let first = document.getElementById("first");
+        let a = first.getAttribute("id")
+        let b = first.getAttribute("class")
+        console.log(a)
+        console.log(b)
+        console.log(first)
+
+        //hasAttribute returns true or false
+        console.log(first.hasAttribute("class"))
+        console.log(first.hasAttribute("style"))
+
+        // setAttribute insert the values
+        // first.setAttribute("class", "hello onemoreclass")
+        // first.setAttribute("id", "hello onemoreclass") //replaces existing id or class
+
+        // removeAttribute removes the attribute
+        // first.removeAttribute("class", "hello onemoreclass") //removes class
+
+        // attributes gives all attribute
+        console.log(first.attributes)
+        
+        // create your own attribute with data-(name of you attribute) = "set value here"
+        console.log(first.dataset)
+        console.log(first.dataset.game)
+        console.log(first.dataset.name)
+    </script>
+</body>
+</html>
