@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling Browser Events</title>
+</head>
+<body>
+    <div>
+        <button id="btn">Click Here</button>
+    </div>
+
+    <script>
+        // let a = prompt("Enter Your Favorite Number")
+
+        let x = function(event){
+            // alert("Hello World!")
+            console.log(event.target)
+            console.log(event.type, event.clientX, event.clientY)
+        }
+
+        let y = function(e){
+            alert("Hello World2!")
+        }
+
+        document.getElementById("btn").addEventListener('click', x)
+
+
+        // document.getElementById("btn").addEventListener('click', y)
+
+        // if(a == "2"){
+        //     document.getElementById("btn").removeEventListener('click', x)
+        // }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval and setTimeout</title>
+</head>
+<body>
+    
+
+    <script>
+        // alert("hello ji")
+
+        //the function inside timeout will execute after certain time
+        // let a = setTimeout(function(){
+        //     alert("This is inside setTimeout")
+        // }, 5000) //time in ms 1000ms = 1sec
+
+        // clearTimeout(a) //this clears above timeout
+
+        // let b = prompt("Do you want to clear timeout y/n")
+
+        // if(b == 'y'){
+        //     clearTimeout(a)
+        // }
+
+        // let sum = (a, b)=>{
+        //     console.log("I am running and sum is", (a+b))
+        // }
+
+        // setTimeout(sum, 2000, 3, 56);
+
+        // setInterval executes repeatedly after given interval of time
+        let sum = (a, b)=>{
+            console.log("I am running and sum is", (a+b))
+        }
+        
+        let clear = setInterval(sum, 2000, 3, 9);
+        clearInterval(clear)
+
+
+    </script>
+</body>
+</html>
