@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+    <style>
+        .Clock{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            background-color: cyan;
+            height: 200px;
+            width: 50%;
+            padding: 20px;
+            margin: auto;
+            border-radius: 30px;
+            font-size:larger;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Current Time</h1>
+    <div id="india" class="Clock"></div>
+    <!-- <div id="London" class="Clock">London</div>
+    <div id="Chicago" class="Clock">Chicago</div> -->
+
+
+    <script>
+        let a = new Date()
+        let h = a.getHours()
+        let m = a.getMinutes()
+        let s = a.getSeconds()
+
+        // console.log(a, h, m, s)
+
+        let time = document.getElementById("india")
+        function UpdateTime(){
+            time.innerHTML = new Date()
+        }
+
+        setInterval(UpdateTime, 1000);
+        
+    </script>
+</body>
+</html>

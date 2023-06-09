@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      .bulb {
+        background: yellow;
+        border-radius: 500px;
+        margin: auto;
+      }
+
+      .bulbcontainer {
+        height: 341px;
+        width: 341px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--   <button onclick="alert('Please give me one plate of Chowmein')">Chow</button>
+  <button onclick="alert('Please give me one plate of vada pow')">Pow</button>
+  <button onclick="alert('Please give me one plate of vada Wow')">Wow</button>
+
+  <h1>Bookmarks</h1>
+  <button id="google">Google</button>
+  <a href="https://fb.com"> <button id="fb">Facebook</button></a>
+  <a href="https://twitter.com"> <button id="twitter">Twitter</button></a>
+ -->
+
+    <div id="bulb" class="bulbcontainer bulb"></div>
+
+    <script>
+      // document.getElementById("google").addEventListener("click", function() {
+      //   window.location = "https://www.google.com";
+      // win.focus();
+
+      // })
+
+      // const fetchContent = async (url) => {
+      //   con = await fetch(url);
+      //   let a = await con.json()
+      //   return a;
+      // }
+
+      // setInterval(async function() {
+      //   let url = "https://jsonplaceholder.typicode.com/todos/1"
+      //   console.log(await fetchContent(url))
+      // }, 3000)
+
+      setInterval(async function () {
+        document.querySelector("#bulb").classList.toggle("bulb");
+      }, 300);
+    </script>
+  </body>
+</html>
