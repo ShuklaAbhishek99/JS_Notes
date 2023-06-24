@@ -2,14 +2,17 @@
 function loadScript(src, callback) {
     var script = document.createElement("script");
     script.src = src;
+    // jab script (i.e. src loaded) load ho jayegi toh ye function run hoga
     script.onload = function () {
         console.log("Loaded script with SRC: " + src)
         callback(null, src);
     }
+    // agar script load nahi hogi toh ye function run ho jayega
     script.onerror = function () {
         console.log("Error loading script with SRC: " + src);
         callback(new Error("Src got some error"))
     }
+    // appending to the script variable, which is script tag
     document.body.appendChild(script);
 }
 
@@ -21,6 +24,13 @@ function hello(error, src) {
     alert('Hello World!' + src);
 }
 
+function goodmorning(error, src){
+    if (error) {
+        console.log(error)
+        return
+    }
+    alert("Good Evening! " + src)
+}
 
 
 // This is callback hell or pyramid of doom

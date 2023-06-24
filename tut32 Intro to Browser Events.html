@@ -11,6 +11,7 @@
       class="container"
       onmouseenter="console.log('container ke andar mouse gaya')"
       onclick="console.log('container me click hua')"
+      style="border: 2px solid red;"
     >
       <button onclick="alert('hello'); let a1 = 6; console.log(a1)">
         Click me
@@ -18,7 +19,7 @@
     </div>
 
     <script>
-      let a = document.getElementsByClassName("container")[0];
+      let a = document.getElementsByClassName("container")[0];//button
       a.onclick = () => {
         let b = document.getElementsByClassName("container")[0];
         b.innerHTML = "Hello World!";

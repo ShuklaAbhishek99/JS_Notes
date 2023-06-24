@@ -2,6 +2,7 @@
 //     return a+b;
 // }
 
+// this is arrow function
 const sum = (a, b)=>{
     return a+b;
 }

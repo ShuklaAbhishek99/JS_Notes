@@ -5,6 +5,7 @@
 //     }, 2000);
 // })
 
+// Promise Chaining
 // p1.then((value)=>{
 //     console.log(value)
 

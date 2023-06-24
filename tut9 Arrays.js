@@ -13,31 +13,31 @@ console.log(typeof marks)
 
 //convert to string
 let b = marks.toString();
-console.log(b);
+console.log("convert to string", b);
 
 //joining arrays
-let c = marks.join("-")
+let c = marks.join("joining arrays" + "-")
 console.log(c);
 
 //removes last element
 marks.pop()
-console.log(marks);
+console.log("removes last element",marks);
 
 //adds a new element at the end
 marks.push(77)
-console.log(marks);
+console.log("adds a new element at the end",marks);
 
 //removes first element and returns it
 marks.shift()
-console.log(marks);
+console.log("removes first element and returns it", marks);
 
 //adds element to the beginning returns new array length
 marks.unshift(88)
-console.log(marks);
+console.log("adds element to the beginning returns new array length", marks);
 
 //arrays element gets deleted, after this execution length of array doesn't changes
 delete marks[1];
-console.log(marks);
+console.log("arrays element gets deleted, after this execution length of array doesn't changes", marks);
 
 
 // join arrays to the given array
@@ -45,14 +45,14 @@ let a2 = [4, 5, 7]
 let a3 = [10, 12, 11]
 
 let new_arr = marks.concat(a2, a3)
-console.log(new_arr);
+console.log("join arrays to the given array", new_arr);
 
 //sorts the array in alphabetically, modifies original array
 new_arr.sort()
-console.log(new_arr);
+console.log("sorts the array in alphabetically, modifies original array", new_arr);
 
 let compare = (a, b)=>{
-    return a -b //descending order
+    return a-b //descending order
     return b-a //ascending order
 }
 new_arr.sort(compare)
@@ -61,7 +61,7 @@ new_arr.sort(compare)
 //splice can be used to add new items to an array, 
 const numbers = [1, 2, 3, 4, 5]
 numbers.splice(2, 1, 23, 24) //position, no of elements to be deleted from mentioned position, elements to be added
-console.log(numbers)
+console.log("splice can be used to add new items to an array, ", numbers)
 
 
 //slices out a piece from an array, it creates a new array
@@ -72,4 +72,4 @@ num.slice(1, 2) //[2, 3], start from index and end index, but last index won't b
 
 //reverses the source of the array
 numbers.reverse()
-console.log(numbers)
+console.log("reverses the source of the array", numbers)
