@@ -5,7 +5,7 @@ let value = prompt("Enter value")
 localStorage.setItem(key, value)
 
 // 2.getItem - gets the value by key
-// console.log(localStorage.getItem("shukla"))
+console.log(localStorage.getItem("shukla"))
 
 // 3.remove the key with its value, takes key
 // localStorage.removeItem("mauj")

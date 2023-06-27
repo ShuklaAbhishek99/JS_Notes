@@ -9,7 +9,7 @@ const Create_todo = async(todo)=>{
         //     body: 'shukla',
         //     userId: 1004,
         //   }),
-        body: JSON.stringify(todo),
+        body: JSON.stringify(todo)
     }
 
     let p = await fetch('https://jsonplaceholder.typicode.com/posts', options)

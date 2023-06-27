@@ -1,33 +1,16 @@
 class Animal {
     constructor(name) {
-        this._name = name
+      this.name = Animal.capitalize(name)
     }
-    fly() {
-        console.log("Mai ud rha hu")
+    walk() {
+      alert("Animal " + this.name + " is walking")
     }
-    get name() {
-        return this._name
+    //use of static to do some process but it is not available to access
+    static capitalize(name) {
+      return name.charAt(0).toUpperCase() + name.substr(1, name.length)
     }
-
-    set name(newName) {
-        this._name = newName
-    }
-
-}
-
-class Rabbit extends Animal {
-    eatCarrot() {
-        console.log("Eating carrot")
-    }
-}
-
-let a = new Rabbit("Bruno")
-a.fly()
-console.log(a.name)
-a.name = "Jack"
-console.log(a.name)
-let c = 56
-
-console.log(a instanceof Animal)
-console.log(a instanceof Rabbit)
-console.log(c instanceof Animal)
+  }
+  
+  j = new Animal("jack")
+  j.walk()
+  // console.log(j.capitalize("thisa")) // --- > this doesnt work

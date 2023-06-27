@@ -4,7 +4,7 @@
 // console.log(a, b)
 
 // Now we can do above code with destructuring assignment like this
-// can takes less or equal values than the size but not less size than the size of arr
+// can takes less or equal values than the size, but not more size than the size of arr
 let arr = [3, 5, 23, 53, 3331, 6, 9, 21]
 // let [a, b] = arr
 

@@ -4,11 +4,11 @@ setTimeout(() => {
 
 try {
     // try...error synchronous function k saath use karna chahiye
-    // console.log(rahul)
+    // console.log(mehul)
     // this will give error but gets handled, setTimeout handle ho jayega par uske andar error aa gaya toh alag baat hai
     // agar andar wale ko bhi handle karna hai to waha par bhi try...catch use karo
     setTimeout(() => {
-        console.log(rahul)
+        console.log(mehul)
     }, 100)
 } catch (error) {
     // console.log(error)
@@ -21,9 +21,9 @@ setTimeout(() => {
 }, 2000)
 
 setTimeout(() => {
-    console.log("Hacking Rahul's facebook id.... Please wait...")
+    console.log("Hacking Mehul's facebook id.... Please wait...")
 }, 3000)
 
 setTimeout(() => {
-    console.log("Username and password of Rahul (+919356700001) fetched.... Please wait...")
+    console.log("Username and password of Mehul (+919356700001) fetched.... Please wait...")
 }, 4000) 
